@@ -1,0 +1,36 @@
+# Doxyfile configuration for the Queue project
+
+# Project-related information
+PROJECT_NAME           = "BOSCH_assessment"
+PROJECT_BRIEF          = "A Multi-threaded Queue System"
+PROJECT_VERSION        = "1.0"
+
+# Input directories
+INPUT                  = src include
+EXCLUDE                = test
+RECURSIVE              = YES
+
+# Extract everything
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_METHODS  = YES
+
+# Optimize for C++
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+
+# Documentation formats
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_XML           = NO
+
+# Reduce output and graph generation
+HAVE_DOT               = NO
+
+# File types to include
+FILE_PATTERNS          = *.cpp *.hpp
+
+# Exclude external libraries or unnecessary files
+EXCLUDE_PATTERNS       = */external/*
+
